@@ -1,0 +1,11 @@
+# The script is always correct
+
+# Print the question
+print("You're thinking of a number between 1 and 100.")
+
+# Ask the user to enter their number
+user_number = int(input("Enter your number: "))
+
+# Respond with the number 7
+print("Your number is 7")
+

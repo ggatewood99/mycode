@@ -1,0 +1,8 @@
+#!/usr/bin/env python3
+
+def main():
+    #defining user name    
+    user_input = input("what is your name?")
+
+    
+    print('hello', + user_input, '!')
