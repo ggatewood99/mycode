@@ -1,11 +1,11 @@
-#!/usr/bin/python3
-
+import subprocess
 import autopep8
 
 def fix_code(code):
-    # Use autopep8 to fix code
-    fixed_code = autopep8.fix_code(code)
-    return fixed_code
+    #subrocess pulls autopep8
+    process = subprocess.Popen(['autopep8', '--stdout', '-'], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+    stdout, stderr = process.communicate(input=code)
+    return stdout
 
 def main():
     user_code = input("Enter your Python code:\n")
@@ -18,4 +18,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
