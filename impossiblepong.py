@@ -7,7 +7,7 @@ turtle.setup(400,300)
 turtle.bgcolor("black")
 
 #ball attributes
-ball = turtle.turtle()
+ball = turtle.Turtle()
 ball.shape("square")
 ball.color("blue")
 ball.penup()
